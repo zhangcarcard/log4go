@@ -103,7 +103,7 @@ func (c Logger) log(level Level, arg0 any, args ...any) error {
 		Message: msg,
 	}
 
-	go c.intLogf(level, rec)
+	c.intLogf(level, rec)
 
 	return nil
 
